@@ -25,7 +25,7 @@ source salicweb-proponentes-venv/bin/activate
 
 4. Instale as dependências do projeto
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 5. Popule o banco
