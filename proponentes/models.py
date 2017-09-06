@@ -24,6 +24,9 @@ class Proponente(models.Model):
     def __str__(self):
         return self.nome
 
+    def __unicode__(self):
+        return self.nome
+
     class Meta:
         managed = False
         db_table = 'sgcacesso'
