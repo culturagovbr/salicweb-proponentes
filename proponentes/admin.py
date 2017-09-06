@@ -6,9 +6,13 @@ from django.contrib import admin
 
 class ProponenteAdmin(admin.ModelAdmin):
 
+    admin.site.disable_action('delete_selected')
+    
     database = 'salicweb'
     
     fields = ('cpf', 'nome', 'dtnascimento', 'email')
+    
+    search_field = ('cpf','nome','email')
 
     def get_queryset(self, request):
         return super(ProponenteAdmin, self).get_queryset(request).using(self.database)
