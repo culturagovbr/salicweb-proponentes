@@ -81,12 +81,15 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
     'salicweb': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'salicweb-proponentes',
-        'USER':'postgres',
-        'PASSWORD':'123456',
-        'HOST':'localhost',
-        'PORT':'5432',
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': os.environ['DBNAME'],
+        'USER': os.environ['DBUSER'],
+        'PASSWORD': os.environ['DBPASS'],
+        'HOST': os.environ['DBHOST'],
+        'PORT': os.environ['DBPORT'],
+        'OPTIONS': {
+            'host_is_server': True,
+        }
     }
 }
 
