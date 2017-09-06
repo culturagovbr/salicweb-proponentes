@@ -65,7 +65,18 @@ driver = /usr/lib/x86_64-linux-gnu/odbc/libtdsodbc.so
 setup = /usr/lib/x86_64-linux-gnu/odbc/libtdsS.so
 ```
 
-11. Bote pra rodar
+11. Configure as variáveis de ambiente das configurações
+
+Declare essas variáveis para informar os dados do Banco:
+```
+$DBNAME
+$DBUSER
+$DBPASS
+$DBHOST
+$DBPORT
+```
+
+12. Bote pra rodar
 
 Navegue para a pasta do projeto com o ambiente virtual ativado e rode o runserver
 ```
