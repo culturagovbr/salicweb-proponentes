@@ -12,7 +12,7 @@ class ProponenteAdmin(admin.ModelAdmin):
     
     fields = ('cpf', 'nome', 'dtnascimento', 'email')
     
-    search_field = ('cpf','nome','email')
+    search_fields = ('cpf','nome','email')
 
     def get_queryset(self, request):
         return super(ProponenteAdmin, self).get_queryset(request).using(self.database)
