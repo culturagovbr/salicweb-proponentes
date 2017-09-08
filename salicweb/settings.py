@@ -25,7 +25,7 @@ SECRET_KEY = '&tr_hgpt^0%75x1^(q3fbcy6g)+atnt+hqy)_sq5@ov@gn0&m1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','localhost' ]
 
 
 # Application definition
