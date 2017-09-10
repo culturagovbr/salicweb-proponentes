@@ -1,0 +1,13 @@
+version: '2'
+services:
+  database:
+    image: culturagovbr/salic-db
+    container_name: salicweb_postgres_db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=root 
+      - POSTGRES_USER=postgres 
+      - PGDATA=/var/lib/postgresql/data 
+    volumes:
+      - ./database/postgresql/data:/var/www/project/db/data 
