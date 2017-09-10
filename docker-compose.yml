@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    web:
+        build: .
+        environment:
+            - DBUSER=postgres
+            - DBPASS=root
+            - DBPORT=5432
+            - DBHOST=0.0.0.0
+            - DBNAME=postgres
+        volumes:
+            - .:/salicweb
+        ports:
+            - "8000:8000"
+        command: python3 manage.py runserver 0.0.0.0:8000
+
