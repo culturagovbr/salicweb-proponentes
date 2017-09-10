@@ -1,5 +1,16 @@
 version: '2'
 services:
+  web:
+    build: .
+    image: culturagovbr/salicweb-proponentes-python:1.0
+    environment:
+      - DBHOST=localhost
+      - DBPORT=5432
+      - DBPASS=root 
+      - DBNAME=postgres
+      - DBUSER=postgres
+    volumes:
+      - .:/salicweb
   database:
     image: culturagovbr/salic-db
     container_name: salicweb_postgres_db
