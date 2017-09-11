@@ -83,5 +83,17 @@ Navegue para a pasta do projeto com o ambiente virtual ativado e rode o runserve
 python manage.py runserver
 ```
 
+13. Ou construa e rode sua imagem docker
+```
+docker build . -t salicweb-proponentes
+docker run -it --name salicweb-proponentes -p 80:8000 -e DBNAME=$DBNAME -e DBUSER=$DBUSER -e DBPASS=$DBPASS -e DBHOST=$DBHOST -e DBPORT=$DBPORT salicweb-proponentes
+```
+
+14. acesse a interface de admin local :D
+User
+Admin
+Pass
+123456
+
 Acesse o serviço no [localhost:8000/admin](http://localhost:8000/admin)
 
