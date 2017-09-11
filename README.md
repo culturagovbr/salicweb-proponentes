@@ -90,9 +90,13 @@ docker run -it --name salicweb-proponentes -p 80:8000 -e DBNAME=$DBNAME -e DBUSE
 ```
 
 14. acesse a interface de admin local :D
-User
-Admin
-Pass
+
+User:
+
+admin
+
+Pass:
+
 123456
 
 Acesse o serviço no [localhost:8000/admin](http://localhost:8000/admin)
