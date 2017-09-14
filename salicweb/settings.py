@@ -25,7 +25,7 @@ SECRET_KEY = '&tr_hgpt^0%75x1^(q3fbcy6g)+atnt+hqy)_sq5@ov@gn0&m1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost','192.168.11.75']
+ALLOWED_HOSTS = ['0.0.0.0','localhost','192.168.11.75','edit.salicweb.cultura.gov.br']
 
 
 # Application definition
